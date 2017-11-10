@@ -1,0 +1,38 @@
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+import java.util.Scanner;
+public class Ejercicio24 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner teclado= new Scanner(System.in);
+
+		int contador=1;
+		int A=2;
+		int numero=teclado.nextInt();
+		while (A==numero){
+			if (numero%A==0){
+				contador++;		
+			}
+			A++;
+		}
+		if (contador==0){
+			System.out.println("El "+numero+ " es primo");
+		}
+		else{
+			System.out.println("El "+numero+ " no es primo");
+
+		}
+	}
+}
+
+

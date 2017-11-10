@@ -1,0 +1,29 @@
+/**
+ * 
+ */
+package ejercicio3;
+
+/**
+ * @author usuario
+ *
+ */
+public class Ejercicio3 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int A;
+		A=1;
+		int pares=0;
+		while (A<=100){
+			if (pares%2==0){
+				System.out.println(A);
+				pares=2;
+			}
+			pares++;
+		}
+	}
+
+}

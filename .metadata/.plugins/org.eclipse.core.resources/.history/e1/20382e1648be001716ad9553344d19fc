@@ -1,0 +1,53 @@
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+import java.util.Scanner;
+public class Ejercicio32 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+	Scanner teclado= new Scanner(System.in);
+	int n;
+	n=teclado.nextInt();	
+	int contador=0;
+	int A=2;
+	while (A==n){
+		if (n%A==0){
+			contador++;
+		}
+		A++;
+	}
+	if(contador==0){
+		System.out.println("El "+n+" es primo");
+		
+	}else{
+		System.out.println("El "+n+" no es primo");
+	}
+	 System.out.println();
+	 A=0;
+	 contador=0;
+	 while(contador<=10){
+		 A=n*contador;
+		 System.out.println(n+" *"+contador+" ="+A);
+		 A=0;
+		 contador++;
+		 System.out.println();
+	 }
+	 A=1;
+	 while (A<=n){
+		 contador=A*contador;
+		 contador++;
+	 }
+	 System.out.println(contador);
+	}
+
+}

@@ -1,0 +1,35 @@
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+import java.util.Scanner;
+public class Ejercicio17 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner teclado= new Scanner(System.in);
+		int A=teclado.nextInt();
+		int B=teclado.nextInt();
+		int multiplos=0;
+		int contador=A;
+		while (contador<=B){
+			if (contador%2==0){
+				multiplos++;
+				System.out.println(contador);
+				}
+		contador++;
+		
+		}
+		
+		
+	}
+
+}

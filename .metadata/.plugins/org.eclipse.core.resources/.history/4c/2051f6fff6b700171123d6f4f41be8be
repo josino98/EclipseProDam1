@@ -1,0 +1,68 @@
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+import java.util.Scanner;
+
+import org.omg.CORBA.SystemException;
+public class Ejercicio15 {
+		//Introducir dos números por teclado. 
+		//Imprimir los números naturales que hay entre ambos números empezando por el más pequeño,
+		//contar cuantos hay y cuántos de ellos son pares.
+		//Calcular la suma de los impares
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner teclado= new Scanner(System.in);
+		int A=teclado.nextInt();
+		int B=teclado.nextInt();
+		int contador=0;
+		int mayor=0;
+		int menor=0;
+		int total=0;
+		int cuentapares=0;
+		int sumaimpares=0;
+		if (A>B){
+			mayor=A-1;
+			menor=B+1;
+		}
+		if (B>A){
+			mayor=B-1;
+			menor=A+1;
+		}
+
+		
+		while (menor<=mayor){
+			System.out.println(menor);
+			contador++;
+			if (menor%2==0){
+				cuentapares++;
+			}
+			else{
+				sumaimpares=menor+sumaimpares;
+			}
+			menor++;
+		}
+
+		System.out.println("hay "+cuentapares+" pares");
+		System.out.println("la suma de los impares es "+sumaimpares);
+		System.out.println("el total es "+contador);
+
+
+
+	}
+
+}
+
+
+
+
+
+

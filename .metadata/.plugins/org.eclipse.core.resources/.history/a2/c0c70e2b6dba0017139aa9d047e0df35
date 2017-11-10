@@ -1,0 +1,27 @@
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+import java.util.Scanner;
+public class Ejercicio19 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner teclado= new Scanner(System.in);
+		int segundos=-1;
+		int contminutos=-1;
+		int contsegundos=-1;
+		int conthoras=-1;
+		while (segundos<0||segundos>59){
+			
+		}
+		
+	}
+}

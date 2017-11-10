@@ -1,0 +1,42 @@
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+import java.util.Scanner;
+public class String4 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//4)Leer una cadena de hasta 80 caracteres y pasarla en función de una variable de opción a mayúsculas ó a minúsculas e imprimir el resultado
+		Scanner teclado = new Scanner(System.in);
+		
+		String frase;
+		int opcion;
+		
+		do{
+			System.out.println("Frase de maximo 80 caracteres: ");
+			frase = teclado.nextLine();
+		}while(frase.length() > 80);
+		
+		do{
+			System.out.println("Selecciona el 1 para convertir a MAYUSCULAS");
+			System.out.println("Selecciona el 2 para convertir a minusculas");
+			opcion = teclado.nextInt();			
+		}while( opcion != 1 && opcion !=2 );
+		
+		switch(opcion){
+		case 1: System.out.println(frase + " en minusculas es " + frase );
+			break;
+		case 2: System.out.println(frase + " en minusculas es " + frase );
+		}
+	
+	}
+	
+}

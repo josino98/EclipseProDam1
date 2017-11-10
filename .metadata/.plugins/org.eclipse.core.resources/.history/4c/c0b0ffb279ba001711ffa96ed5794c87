@@ -1,0 +1,24 @@
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+public class Ejercicio5 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int contador=1; int sumaimpares=0; 
+		while (contador<99) {contador=contador+2; sumaimpares=sumaimpares+1; System.out.println(contador);}
+		System.out.println("hay "+sumaimpares+ "impares");
+			
+
+	}
+
+
+}

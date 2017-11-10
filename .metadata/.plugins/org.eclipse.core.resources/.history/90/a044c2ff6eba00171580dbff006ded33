@@ -1,0 +1,50 @@
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+import java.util.Scanner;
+public class Ejercicio19 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner teclado= new Scanner(System.in);
+		int segundos=0;
+		int minutos=0;
+		int horas=0;
+		int x=0;
+		int y=0;
+		int z=0;
+		System.out.println("introduce horas");x= teclado.nextInt();
+		System.out.println("introduce minutos");y= teclado.nextInt();
+		System.out.println("introduce segundos");z= teclado.nextInt();
+		horas=horas+x;
+		minutos=minutos+y;
+		segundos=segundos+z;
+		while (horas>24){
+			System.out.println("horas"+horas);
+			System.out.println("minutos"+minutos);
+			System.out.println("segundos"+segundos);
+			segundos++;		
+		}
+		if (segundos==60){
+			minutos++;
+			segundos=0;
+		}
+		if (minutos==60){
+			horas++;
+			minutos=0;			
+		}
+		if (horas==24){
+			horas=0;
+		}
+
+	}
+}
+

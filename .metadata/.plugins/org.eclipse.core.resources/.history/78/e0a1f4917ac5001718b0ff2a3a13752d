@@ -1,0 +1,44 @@
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+import java.util.Scanner;
+public class String5 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//5. Leer una frase por teclado (máximo 80 car) y construir otras dos cadenas de forma que una
+		//contenga los caracteres en posición par y la otra los caracteres en posición impar.
+		
+		Scanner teclado= new Scanner(System.in);
+		
+		String frase;
+		String Par="";
+		String Impar="";
+		
+		do{
+			System.out.println("Introduce una frase con un maximo de 80 caracteres: ");
+			frase=teclado.nextLine();
+		}while(frase.length()>80);
+		
+		
+		int i; 
+		for(i=0; i<frase.length(); i=i+2){
+			Par=Par+frase.charAt(i-1);
+		}
+		for (i=1; i<frase.length(); i=i+2){
+			Impar=Impar+frase.charAt(i-1);
+		}
+		System.out.println("Posicion par: "+ Par);
+		System.out.println("Posicion impar: "+ Impar);
+
+	}
+
+}

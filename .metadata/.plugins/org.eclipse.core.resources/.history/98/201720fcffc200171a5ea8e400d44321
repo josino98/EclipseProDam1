@@ -1,0 +1,37 @@
+
+
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+import java.util.Scanner;
+public class String1 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String frase;
+		int lineas;
+		int caracter;
+		Scanner teclado = new Scanner(System.in);
+		do{
+			System.out.println("Frase de hasta 80 caracteres:");
+			frase = teclado.nextLine();
+		}while(frase.length() > 80);
+
+		for(lineas=1; lineas<frase.length(); lineas++){
+			System.out.println();
+			for(caracter=0; caracter<=lineas; caracter++){
+				System.out.print(frase.charAt(caracter));
+			}
+		}
+	}
+}
+

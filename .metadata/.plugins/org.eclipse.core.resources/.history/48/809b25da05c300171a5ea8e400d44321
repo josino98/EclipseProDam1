@@ -1,0 +1,26 @@
+//2. Dada una frase de no más de 80 caracteres hacer un programa que busque cuántas mayúsculas y minúsculas tiene y lo imprima
+import java.util.Scanner;
+public class T04Ej02 {
+	public static void main(String[] args){		
+		int contaMay;
+		int contaMin;
+		int linea;
+		int numLetras;
+		String frase;
+		Scanner teclado = new Scanner(System.in);
+		do{
+			System.out.println("Frase de 80 caracteres como máximo");
+			frase = teclado.nextLine();
+		}while(frase.length() > 80);
+		contaMay=0;
+		contaMin=0;
+		for(int i=0; i < frase.length(); i++){
+			if(frase.charAt(i) >= 97 && frase.charAt(i) <= 122){
+				contaMin++;
+			}else if(frase.charAt(i) >= 'A' && frase.charAt(i) <= 'Z'){
+				contaMay++;
+			}
+		}
+		System.out.println(frase + "tiene " + contaMay + " mayuscula(s) y " + contaMin + " minuscula(s)");
+	}
+}

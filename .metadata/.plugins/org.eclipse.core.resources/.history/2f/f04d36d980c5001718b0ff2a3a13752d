@@ -1,0 +1,57 @@
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+import java.util.Scanner;
+public class String6 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//Leer una frase por teclado (máximo 80) y a continuación escribir cuantas vocales, consonantes y caracteres numéricos posee.
+		Scanner teclado= new Scanner(System.in);
+	 
+		String frase;
+		String vocales="AEIOU";
+		String consonantes="BCDFGHJKLMNÑPQRSTVWXYZ";
+		String frasenueva;
+		String numeros="0123456789";
+		
+		char caracter;
+		int contaVocales, contaConsonantes, contaNumeros, k;
+		
+		do{
+			System.out.println("Introduce una frase con un maximo de 80 caracteres: ");
+			frase=teclado.nextLine();
+		}while(frase.length()>80);
+		
+		frasenueva=frase.toUpperCase();
+		contaVocales = contaConsonantes = contaNumeros = 0;
+		for(k=0; k<=frasenueva.length()-1;k++){
+			caracter=frasenueva.charAt(k);
+			if(vocales.indexOf(caracter) != -1){
+				contaVocales++;
+			}else if(consonantes.indexOf(caracter) != -1){
+				contaConsonantes++;
+			}else if(numeros.indexOf(caracter) != -1){
+				contaNumeros++;
+			}
+		}
+		
+		System.out.println("En la frase "+ frase + " hay " + vocales + " vocal(es) " +
+				consonantes + " consonante(s) " + numeros + " numero(s).");
+		System.out.println("frase: " + frase);
+		System.out.println("fraseNueva: " + frasenueva);
+	
+		
+		
+	
+	}
+
+}

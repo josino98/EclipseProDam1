@@ -1,0 +1,28 @@
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+import java.util.Scanner;
+public class Ejercicio7 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner teclado= new Scanner(System.in);
+		int contador=0;
+		int frase=teclado.nextInt();
+		while (contador<=0){
+			contador++;
+			
+		}
+		System.out.println(contador);
+
+	}
+
+}

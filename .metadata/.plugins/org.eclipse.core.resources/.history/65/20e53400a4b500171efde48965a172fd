@@ -1,0 +1,35 @@
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+import java.util.Scanner;
+
+import org.omg.CORBA.SystemException;
+public class Ejercicio15 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner teclado= new Scanner(System.in);
+		int contador=0;
+		int A=teclado.nextInt();
+		int B=teclado.nextInt();
+		int total=0;
+		int pares=0;
+		int impares=0;
+		A= teclado.nextInt();
+		B= teclado.nextInt();
+		
+		
+		
+		}
+
+	}
+
+

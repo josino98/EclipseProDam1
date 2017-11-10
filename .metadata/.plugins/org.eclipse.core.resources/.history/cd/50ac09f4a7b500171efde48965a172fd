@@ -1,0 +1,63 @@
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+import java.util.Scanner;
+
+import org.omg.CORBA.SystemException;
+public class Ejercicio15 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner teclado= new Scanner(System.in);
+		int A=teclado.nextInt();
+		int B=teclado.nextInt();
+		int contador=0;
+		int mayor=0;
+		int menor=0;
+		int total=0;
+		int cuentapares=0;
+		int sumaimpares=0;
+		if (A>B){
+			mayor=A;
+			menor=B;
+		}
+		if (B>A){
+			mayor=B;
+			menor=A;
+		}
+		contador++;
+		total=mayor-menor-1;
+		while (contador<mayor){
+			System.out.println(contador);
+			if (contador%2==0){
+				cuentapares++;
+			}
+			else{
+				sumaimpares++;
+			}
+			contador++;
+		}
+
+		System.out.println(cuentapares);
+		System.out.println(sumaimpares);
+		System.out.println(total);
+
+
+
+	}
+
+}
+
+
+
+
+
+

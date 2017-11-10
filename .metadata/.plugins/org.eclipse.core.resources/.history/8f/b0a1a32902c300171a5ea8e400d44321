@@ -1,0 +1,29 @@
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+import java.util.Scanner;
+public class Ejercicio18 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//18.-Hacer un pseudocódigo que cuente las veces que aparece una determinada letra en una frase que introduciremos por teclado
+
+		Scanner teclado= new Scanner(System.in);
+		String texto="";
+		String caracter="";
+		int contador=0;
+		System.out.println("Introduce un texto:");
+		
+		
+
+	}
+
+}

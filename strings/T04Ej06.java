@@ -21,8 +21,8 @@ public class T04Ej06 {
 		
 		fraseNueva=frase.toUpperCase();
 		contaVocales = contaConsonantes = contaNumeros = 0;
-		for(i=0; i<=fraseNueva.length()-1;k++){
-			caracter=fraseNueva.charAt(k);
+		for(i=0; i<=fraseNueva.length()-1;i++){
+			caracter=fraseNueva.charAt(i);
 			if(patronVocales.indexOf(caracter) != -1){
 				contaVocales++;
 			}else if(patronConsonantes.indexOf(caracter) != -1){

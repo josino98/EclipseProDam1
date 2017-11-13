@@ -1,0 +1,73 @@
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+import java.util.Scanner;
+public class EjercicioDni {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int pulsa; int opcion; int dni;
+		
+		Scanner teclado= new Scanner(System.in);
+		System.out.println("Pulsa 1 si eres español");
+		System.out.println("Pulsa 2 si eres extranjero");
+		do {
+			pulsa= teclado.nextInt();
+			
+		} while (pulsa<1 || pulsa>2);
+		opcion=pulsa;
+		
+		switch (opcion) {
+		case 1:
+			System.out.println("Introduce los digitos del DNI");
+			dni=teclado.nextInt();
+			while (dni<1) {
+				if ((dni<00000000)||(dni>99999999)) {
+					System.err.println("Error, no se permiten ni más o menos de 8 digitos");
+					
+				} else {
+					
+				}
+				
+			} 
+			
+			
+			System.out.println("Ponme la letra");
+		
+			
+				
+			
+			
+			break;
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+		default:
+			break;
+		}
+		
+		
+	
+		
+
+
+	}
+
+}

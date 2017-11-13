@@ -1,0 +1,29 @@
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+import java.util.Scanner;
+public class String7 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Leer una frase por teclado y escribir a continuación cuantas mayúsculas, minúsculas y números contiene.
+		
+		Scanner teclado= new Scanner(System.in);
+		 char letra;
+		 String frase;
+		 System.out.println("Introduce una farse: ");
+		 frase=teclado.nextLine();
+		    
+		    
+		
+	}
+
+}
